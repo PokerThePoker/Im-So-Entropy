@@ -126,7 +126,7 @@ SMODS.Joker {
 }
 
 SMODS.Joker {
-    key = "e",
+    key = "value_modifying_joker",
     config = { extra = { Xmult = 1, values_mod = 1.01 } },
     rarity = "cry_epic",
     cost = 16,
