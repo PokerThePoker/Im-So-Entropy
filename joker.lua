@@ -125,38 +125,5 @@ SMODS.Joker {
     end,
 }
 
-SMODS.Joker {
-    key = "value_modifying_joker",
-    config = { extra = { Xmult = 1, values_mod = 1.01 } },
-    rarity = "cry_epic",
-    cost = 16,
-    blueprint_compat = true,
-    eternal_compat = true,
-    pos = { x = 0, y = 0 },
-    atlas = "jokers",
-    demicoloncompat = true,
-    loc_vars = function(self, info_queue, card)
-        return {
-            vars = {
-                card.ability.extra.Xmult
-		card.ability.extra.values_mod
-            }
-        }
-    end,
-    calculate = function(self, card, context)
-        if context.joker_main or context.forcetrigger then
-            return {
-                Xmult = card.ability.extra.Xmult
-            }
-	end,
-	if context.end_of_round and context.cardarea == G.jokers then
-		return {
-		card.ability.extra.Xmult = card.ability.extra.Xmult * card.ability.extra.values_mod
-		card.ability.extra.values_mod = card.ability.extra.values_mod * card.ability.extra.values_mod
-		}
-        end
-    end,
-}
-
 ----------------------------------------------
 ------------MOD CODE END----------------------
