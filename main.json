@@ -1,0 +1,21 @@
+{
+	"id": "im_so_entropy",
+	"name": "I'm So Entropy",
+	"display_name": "I'm So Entropy",
+	"author": [
+		"Poker The Poker"
+	],
+	"description": "I feel so entropic!",
+	"prefix": "ise",
+	"main_file": "main.lua",
+	"priority": 667,
+	"badge_colour": "f7B90F",
+	"badge_text_colour": "FFFFFF",
+	"version": "0.0.0",
+	"dependencies": [
+		"Talisman",
+		"Cryptid",
+		"Steamodded",
+		"entr"
+	]
+}
