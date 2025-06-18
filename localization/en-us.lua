@@ -34,16 +34,6 @@ return {
 					"end of round",
 				},
 			},
-			j_ise_value_modifying_joker
-			= {
-				name = "Value Modifying Joker",
-				text = {
-					"{X:red,C:white}X#1#{} Mult",
-					"All values of this {C:attention}Joker{}",
-					"Increase by {C:attention}X1.01{} at",
-					"end of round"
-				},
-			},
 		},
 	},
 }
