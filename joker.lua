@@ -140,7 +140,7 @@ SMODS.Joker {
             vars = {
                 card.ability.extra.Xmult
 		card.ability.extra.values_mod
-            },
+            }
         }
     end,
     calculate = function(self, card, context)
