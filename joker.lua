@@ -125,5 +125,26 @@ SMODS.Joker {
     end,
 }
 
+SMODS.Joker {
+    key = "celestial_joker",
+    config = {},
+    rarity = 3,
+    cost = 10,
+    blueprint_compat = true,
+    eternal_compat = true,
+    pos = { x = 0, y = 0 },
+    atlas = "jokers",
+    demicoloncompat = true,
+    loc_vars = function(self, info_queue, card)
+    end,
+    calculate = function(self, card, context)
+        if context.joker_main or context.forcetrigger then
+            return {
+                Xmult = G.GAME.hands[context.scoring_name].level
+            }
+        end
+    end,
+}
+
 ----------------------------------------------
 ------------MOD CODE END----------------------

@@ -34,6 +34,15 @@ return {
 					"end of round",
 				},
 			},
+			j_ise_celestial_joker
+			= {
+				name = "Celestial Joker",
+				text = {
+					"Multiplies your Mult by",
+					"{C:attention}level{} of played",
+					"{C:attention}poker hand{}"
+				},
+			},
 		},
 	},
 }
