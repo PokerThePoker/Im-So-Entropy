@@ -132,7 +132,7 @@ SMODS.Joker {
     cost = 10,
     blueprint_compat = true,
     eternal_compat = true,
-    pos = { x = 0, y = 0 },
+    pos = { x = 3, y = 0 },
     atlas = "jokers",
     demicoloncompat = true,
     loc_vars = function(self, info_queue, card)
