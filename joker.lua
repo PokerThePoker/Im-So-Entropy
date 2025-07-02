@@ -76,7 +76,7 @@ SMODS.Joker {
     cost = 13,
     blueprint_compat = true,
     eternal_compat = true,
-    pos = { x = 0, y = 3 },
+    pos = { x = 3, y = 0 },
     atlas = "placeholders",
     demicoloncompat = true,
     pools = { ["Meme"] = true },
