@@ -8,6 +8,13 @@ SMODS.Atlas {
 	py = 95
 }
 
+SMODS.Atlas {
+	key = "placeholders",
+	path = "atlas_placeholders.png",
+	px = 71,
+	py = 95
+}
+
 SMODS.Joker {
     key = "the_fucking_sun",
     config = { extra = { plus_asc = 72 } },
@@ -69,8 +76,8 @@ SMODS.Joker {
     cost = 13,
     blueprint_compat = true,
     eternal_compat = true,
-    pos = { x = 0, y = 0 },
-    atlas = "jokers",
+    pos = { x = 0, y = 3 },
+    atlas = "placeholders",
     demicoloncompat = true,
     pools = { ["Meme"] = true },
     loc_vars = function(self, info_queue, card)
