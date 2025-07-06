@@ -43,6 +43,14 @@ return {
 					"{C:attention}poker hand{}"
 				},
 			},
+			j_ise_universal_joker
+			= {
+				name = "Universal Joker",
+				text = {
+					"{C:mult}+#1#{} Mult to played",
+					"{C:attention}poker hand{}"
+				},
+			},
 		},
 	},
 }

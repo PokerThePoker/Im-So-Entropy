@@ -153,5 +153,25 @@ SMODS.Joker {
     end,
 }
 
+SMODS.Joker {
+    key = "universal_joker",
+    config = { extra = { h_mult = 1 } },
+    rarity = 2,
+    cost = 10,
+    blueprint_compat = true,
+    eternal_compat = true,
+    pos = { x = 1, y = 0 },
+    atlas = "placeholders",
+    demicoloncompat = true,
+    loc_vars = function(self, info_queue, card)
+        return { vars = { number_format(card.ability.extra.h_mult) } }
+    end,
+    calculate = function(self, card, context)
+        if (context.before) or context.forcetrigger then
+            G.GAME.hands[context.scoring_name].mult = G.GAME.hands[context.scoring_name].mult + card.ability.extra.h_mult
+        end
+    end
+}
+
 ----------------------------------------------
 ------------MOD CODE END----------------------
